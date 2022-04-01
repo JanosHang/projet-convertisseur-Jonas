@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="350.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+   <children>
+      <TabPane fx:id="monPane" prefHeight="350.0" prefWidth="500.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <tabs>
+            <Tab text="Accueil">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="btnLongueur" layoutX="52.0" layoutY="212.0" mnemonicParsing="false" onAction="#changer" text="Longueur" textFill="#1741a6" />
+                        <Button fx:id="btnVitesse" layoutX="263.0" layoutY="212.0" mnemonicParsing="false" onAction="#changer" text="Vitesse" textFill="#3546b5" />
+                        <Button fx:id="btnMasse" layoutX="158.0" layoutY="212.0" mnemonicParsing="false" onAction="#changer" text="Masse" textFill="#2e4ba4" />
+                        <Button fx:id="btnEnergie" layoutX="383.0" layoutY="212.0" mnemonicParsing="false" onAction="#changer" text="Energie" textFill="#4053bf" />
+                        <ImageView fitHeight="71.0" fitWidth="118.0" layoutX="14.0" layoutY="110.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../Desktop/download.jpg" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="89.0" fitWidth="116.0" layoutX="158.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fitHeight="71.0" fitWidth="118.0" layoutX="148.0" layoutY="105.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../Desktop/71UML61axfL._AC_SL1500_.jpg" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="71.0" fitWidth="118.0" layoutX="377.0" layoutY="105.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../Desktop/download-1.jpg" />
+                           </image>
+                        </ImageView>
+                        <Button layoutX="418.0" layoutY="14.0" mnemonicParsing="false" onAction="#quitter" text="Quitter" />
+                        <ImageView fitHeight="97.0" fitWidth="96.0" layoutX="245.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../Desktop/download-2.jpg" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+          <Tab text="Longueur">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Text layoutX="65.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Convertisseur de longueur" underline="true" wrappingWidth="369.81640625">
+                           <font>
+                              <Font name="Kefa Bold" size="30.0" />
+                           </font>
+                        </Text>
+                        <ComboBox fx:id="cbo1" layoutX="80.0" layoutY="172.0" onAction="#ConvertL1" prefWidth="150.0" />
+                        <ComboBox fx:id="cbo2" layoutX="261.0" layoutY="172.0" onAction="#ConvertL1" prefWidth="150.0" />
+                        <TextField fx:id="txt1" layoutX="74.0" layoutY="118.0" onKeyReleased="#ConvertL1" onKeyTyped="#verifNum" />
+                        <TextField fx:id="txt2" layoutX="255.0" layoutY="118.0" onAction="#verifNum" onKeyReleased="#ConvertL2" onKeyTyped="#verifNum" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Masse">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Text layoutX="84.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Convertisseur de masse" underline="true" wrappingWidth="331.81640625">
+                           <font>
+                              <Font name="Kefa Bold" size="30.0" />
+                           </font>
+                        </Text>
+                        <ComboBox fx:id="cbo3" layoutX="84.0" layoutY="172.0" onAction="#ConvertM1" prefWidth="150.0" />
+                        <ComboBox fx:id="cbo4" layoutX="266.0" layoutY="172.0" onAction="#ConvertM1" prefWidth="150.0" />
+                        <TextField fx:id="txt3" layoutX="79.0" layoutY="119.0" onKeyReleased="#ConvertM1" onKeyTyped="#verifNum" />
+                        <TextField fx:id="txt4" layoutX="261.0" layoutY="119.0" onAction="#verifNum" onKeyReleased="#ConvertM2" onKeyTyped="#verifNum" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Vitesse">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Text layoutX="79.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Convertisseur de vitesse" underline="true" wrappingWidth="420.81640625">
+                           <font>
+                              <Font name="Kefa Bold" size="30.0" />
+                           </font>
+                        </Text>
+                        <ComboBox fx:id="cbo5" layoutX="84.0" layoutY="175.0" onAction="#ConvertV1" prefWidth="150.0" />
+                        <ComboBox fx:id="cbo6" layoutX="261.0" layoutY="175.0" onAction="#ConvertV1" prefWidth="150.0" />
+                        <TextField fx:id="txt5" layoutX="79.0" layoutY="119.0" onKeyReleased="#ConvertV1" onKeyTyped="#verifNum" />
+                        <TextField fx:id="txt6" layoutX="261.0" layoutY="119.0" onAction="#verifNum" onKeyReleased="#ConvertV2" onKeyTyped="#verifNum" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Energie">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Text layoutX="80.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Convertisseur d'énergie" underline="true" wrappingWidth="362.81640625">
+                           <font>
+                              <Font name="Kefa Bold" size="30.0" />
+                           </font>
+                        </Text>
+                        <ComboBox fx:id="cbo7" layoutX="84.0" layoutY="172.0" onAction="#ConvertE1" prefWidth="150.0" />
+                        <ComboBox fx:id="cbo8" layoutX="266.0" layoutY="172.0" onAction="#ConvertE1" prefWidth="150.0" />
+                        <TextField fx:id="txt7" layoutX="79.0" layoutY="115.0" onAction="#verifNum" onKeyReleased="#ConvertE1" onKeyTyped="#verifNum" />
+                        <TextField fx:id="txt8" layoutX="261.0" layoutY="115.0" onAction="#verifNum" onKeyReleased="#ConvertE2" onKeyTyped="#verifNum" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
