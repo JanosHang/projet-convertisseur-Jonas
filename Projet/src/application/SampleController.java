@@ -15,6 +15,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.ButtonType;
 import javafx.scene.control.TabPane;
 import javafx.scene.control.TextField;
+import javafx.scene.image.ImageView;
 import javafx.scene.input.KeyEvent;
 
 public class SampleController implements Initializable{
@@ -82,6 +83,18 @@ public class SampleController implements Initializable{
     
     @FXML
     private Button btnVitesse;
+    
+    @FXML
+    private ImageView image1;
+    
+    @FXML
+    private ImageView image2;
+    
+    @FXML
+    private ImageView image3;
+    
+    @FXML
+    private ImageView image4;
     
     
     @FXML

@@ -19,26 +19,26 @@
                         <Button fx:id="btnVitesse" layoutX="263.0" layoutY="212.0" mnemonicParsing="false" onAction="#changer" text="Vitesse" textFill="#3546b5" />
                         <Button fx:id="btnMasse" layoutX="158.0" layoutY="212.0" mnemonicParsing="false" onAction="#changer" text="Masse" textFill="#2e4ba4" />
                         <Button fx:id="btnEnergie" layoutX="383.0" layoutY="212.0" mnemonicParsing="false" onAction="#changer" text="Energie" textFill="#4053bf" />
-                        <ImageView fitHeight="71.0" fitWidth="118.0" layoutX="14.0" layoutY="110.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="image1" fitHeight="71.0" fitWidth="118.0" layoutX="14.0" layoutY="110.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../../../../Desktop/download.jpg" />
+                              <Image url="@../../../../../Desktop/download.jpg" />
                            </image>
                         </ImageView>
                         <ImageView fitHeight="89.0" fitWidth="116.0" layoutX="158.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true" />
-                        <ImageView fitHeight="71.0" fitWidth="118.0" layoutX="148.0" layoutY="105.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="image2" fitHeight="71.0" fitWidth="118.0" layoutX="148.0" layoutY="105.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../../../../Desktop/71UML61axfL._AC_SL1500_.jpg" />
+                              <Image url="@../../../../../Desktop/71UML61axfL._AC_SL1500_.jpg" />
                            </image>
                         </ImageView>
-                        <ImageView fitHeight="71.0" fitWidth="118.0" layoutX="377.0" layoutY="105.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="image4" fitHeight="71.0" fitWidth="118.0" layoutX="377.0" layoutY="105.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../../../../Desktop/download-1.jpg" />
+                              <Image url="@../../../../../Desktop/download-1.jpg" />
                            </image>
                         </ImageView>
                         <Button layoutX="418.0" layoutY="14.0" mnemonicParsing="false" onAction="#quitter" text="Quitter" />
-                        <ImageView fitHeight="97.0" fitWidth="96.0" layoutX="245.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="image3" fitHeight="97.0" fitWidth="96.0" layoutX="245.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../../../../Desktop/download-2.jpg" />
+                              <Image url="@../../../../../Desktop/download-2.jpg" />
                            </image>
                         </ImageView>
                      </children>
